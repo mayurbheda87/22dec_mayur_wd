@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover effect</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        nav{
+            height: 100px;
+            background-color: #040404;
+            display: flex;
+            align-items: center;
+            /* justify-content: space-around; */
+            /* margin: auto; */
+        }
+        a{
+            position: relative;
+            text-decoration: none;
+            color: #a0a0a0;
+            margin: 50px;
+            padding: 0px 10px;
+        }
+        a:after{
+            content: "";
+            position: absolute;
+            background-color: #ff3c78;
+            height: 3px;
+            width: 0%;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+        }
+        a:hover:after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Review</a>
+        <a href="#">Contact us</a>
+    </nav>
+</body>
+</html>
