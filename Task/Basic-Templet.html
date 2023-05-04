@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Templet</title>
+    <link rel="stylesheet" href="taskbasictemplet.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#slide').cycle('shuffle')
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Online Exam</h1>
+            <ul>
+                <li><a href="#slide">Home</a></li>
+                <li><a href="#section-form-1">Registration</a></li>
+                <li><a href="#">Quiz</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Log out</a></li>
+            </ul>
+        </div>
+    </header>
+    <section id="slide">
+        <img src="./image/slide-1.png" alt="">
+        <img src="./image/slide-2.webp" alt="">
+        <img src="./image/slide-3.png" alt="">
+    </section>
+    <section id="section-form-1">
+        <div class="form">
+        <form action="#">
+            <h1>Login</h1>
+            <input type="text" value="" placeholder="Enter Name" class="one" required><br>
+            <input type="password" name="" id="" placeholder="Password" class="two" required>
+            <button class="btn">Log in</button>
+            <p class="para">Create new account?<a href="taskbasictemplet-2.html">registration here</a></p>
+        </form>
+    </div>
+    </section>
+    <footer>
+        <p>Copyright@2019 and this webpage is good</p>
+    </footer>
+</body>
+</html>
